@@ -30,6 +30,7 @@
                                 <button type="submit" class="btn btn-danger btn-sm">Hapus</button>
                             </form>
                             <a href="{{ route('surats.download', $surat) }}" class="btn btn-warning btn-sm">Unduh</a>
+                            <a href="{{ route('surats.edit', $surat) }}" class="btn btn-info btn-sm">Edit</a>
                             <a href="{{ route('surats.show', $surat) }}" class="btn btn-primary btn-sm">Lihat &gt;&gt;</a>
                         </td>
                     </tr>

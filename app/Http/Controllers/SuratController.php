@@ -110,7 +110,9 @@ class SuratController extends Controller
 
     public function download(Surat $surat)
     {
-        return response()->download(public_path($surat->file_path), $surat->nomor_surat . '-' . $surat->judul . '.pdf');
+
+        // dd($surat);
+        return response()->download($surat->file_path);
     }
 
     public function show(Surat $surat)
